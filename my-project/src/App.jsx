@@ -5,6 +5,8 @@ import Overview from "./pages/Overview";
 import FAQs from "./pages/FAQs";
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
+import Register from "./components/Register";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -12,10 +14,12 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Timeline />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/time-line" element={<Timeline />} />
           <Route path="/overview" element={<Overview />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </BrowserRouter>
     </>
