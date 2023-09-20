@@ -8,6 +8,10 @@ import sparkImage from "../assets/spark.png";
 import countdownImage from "../assets/Countdown.png";
 import maleImage from "../assets/man.png";
 import sparkle from "../assets/sparkle.png";
+import sata from "../assets/sata.png";
+import idea from "../assets/idea.png";
+import lady from "../assets/lady.png";
+import persons from "../assets/persons.png";
 
 export default function Home() {
   return (
@@ -55,6 +59,88 @@ export default function Home() {
           />
         </div>
       </div>
+      <hr />
+      <section className="flex justify-between mt-6 relative space-x-16 items-center">
+        <img
+          className="w-5 h-5 absolute bottom-4 left-2 top-3"
+          src={sata}
+          alt="star image"
+        />
+        <img className="mb-6" src={idea} alt="idea image" />
+        <div>
+          <h2 className="text-2xl font-bold">Introduction to getlinked</h2>
+          <h3 className="text-[#D434FE] text-2xl font-bold mt-2 mb-2">
+            tech Hackathon 1.0
+          </h3>
+          <p className>
+            Our tech hackathon is a melting pot of visionaries, and its purpose
+            is as clear as day: to shape the future. Whether you're a coding
+            genius, a design maverick, or a concept wizard, you'll have the
+            chance to transform your ideas into reality. Solving real-world
+            problems, pushing the boundaries of technology, and creating
+            solutions that can change the world, that's what we're all about!
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section className="flex items-center">
+        <div>
+          <h2 className="text-2xl font-bold">Rules and</h2>
+          <h2 className="text-2xl text-[#D434FE] mt-1 mb-1 font-bold">
+            Guidelines
+          </h2>
+          <p>
+            Our tech hackathon is a melting pot of visionaries, and its purpose
+            is as clear as day: to shape the future. Whether you're a coding
+            genius, a design maverick, or a concept wizard, you'll have the
+            chance to transform your ideas into reality. Solving real-world
+            problems, pushing the boundaries of technology, and creating
+            solutions that can change the world, that's what we're all about!
+          </p>
+        </div>
+        <img src={lady} alt="" />
+      </section>
+      <hr />
+      <section className="flex items-center mt-10">
+        <img src={persons} alt="" />
+        <div>
+          <h2 className="text-2xl font-bold">Judging Criteria</h2>
+          <h2 className="text-2xl text-[#D434FE] font-bold">Key attributes</h2>
+          <p>
+            <span className="text-[#FF26B9]">Innovation and Creativity:</span>
+            Evaluate the uniqueness and creativity of the solution. Consider
+            whether it addresses a real-world problem in a novel way or
+            introduces innovative features.
+            <br />
+            <br />
+            <span className="text-[#FF26B9]">Functionality</span> Assess how
+            well the solution works. Does it perform its intended functions
+            effectively and without major issues? Judges would consider the
+            completeness and robustness of the solution.
+            <br />
+            <br />
+            <span className="text-[#FF26B9]">Impact and Relevance:</span>{" "}
+            Determine the potential impact of the solution in the real world.
+            Does it address a significant problem, and is it relevant to the
+            target audience? Judges would assess the potential social, economic,
+            or environmental benefits.
+            <br />
+            <br />
+            <span className="text-[#FF26B9]">Technical Complexity:</span>{" "}
+            Evaluate the technical sophistication of the solution. Judges would
+            consider the complexity of the code, the use of advanced
+            technologies or algorithms, and the scalability of the solution.
+            <br />
+            <br />
+            <span className="text-[#FF26B9]">
+              Adherence to Hackathon Rules:
+            </span>{" "}
+            Judges will Ensure that the team adhered to the rules and guidelines
+            of the hackathon, including deadlines, use of specific technologies
+            or APIs, and any other competition-specific requirements.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
