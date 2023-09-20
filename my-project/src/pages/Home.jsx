@@ -1,5 +1,7 @@
 import React from "react";
 import Register from "../components/Register";
+import Readmore from "../components/Readmore";
+
 import starImage from "../assets/star.png";
 import vectorImage from "../assets/Vector 4.png";
 import creativeImage from "../assets/Creative 1.png";
@@ -139,6 +141,7 @@ export default function Home() {
             of the hackathon, including deadlines, use of specific technologies
             or APIs, and any other competition-specific requirements.
           </p>
+          <Readmore className="mt-10" />
         </div>
       </section>
     </div>
