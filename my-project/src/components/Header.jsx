@@ -14,7 +14,7 @@ export default function Header() {
   }
   return (
     <div className=" shadow-sm static top-0 z-40">
-      <header className="flex justify-between items-center max-w-6xl mx-auto p-5">
+      <header className="flex justify-between items-center max-w-6xl mx-auto p-5 lg:block">
         <img
           src="./src/assets/getlinked.png"
           alt="logo"
@@ -22,8 +22,8 @@ export default function Header() {
           onClick={() => navigate("/")}
         />
 
-        <div className="flex gap-28 items-center ">
-          <ul className="text-white flex space-x-6">
+        <div className="flex gap-28 items-center">
+          <ul className="text-white flex space-x-6 md:flex md:items-center">
             <li
               className={`cursor-pointer ${
                 pathMatchRoute("/") && "text-green-500 border-b"
