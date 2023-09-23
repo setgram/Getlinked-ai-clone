@@ -436,69 +436,70 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </div>
-      <footer className="bg-[#100B20] text-white p-16 flex justify-between">
-        <div>
-          <img src={logo} alt="" />
-          <p>
-            Getlinked Tech Hackathon is a technology innovation program <br />
-            established by a group of organizations with the aim of showcasing{" "}
-            <br />
-            young and talented individuals in the field of technology
-          </p>
-          <br />
-          <p>
-            Terms of Use{" "}
-            <div className="w-1 h-7 bg-purple-900 inline-block"></div> Privacy
-            Policy
-          </p>
-        </div>
-        <div>
-          <h1 className="text-2xl text-[#D434FE] font-bold">Useful Links</h1>
-          <ul>
-            <a href="#">
-              <li>Overview</li>
-            </a>
-            <a href="#">
-              <li>Timeline</li>
-            </a>
-            <a href="#">
-              <li>FAQs</li>
-            </a>
-            <a href="#">
-              <li>Regular</li>
-            </a>
-          </ul>
-          <div className="flex items-center gap-1">
-            <h2 className="text-xl font-bold text-[#D434FE]">Follow us</h2>
-            <div className="flex gap-2 w-20 h-2">
-              <AiOutlineInstagram />
-              <RiTwitterXFill />
-              <FiFacebook />
-              <CiLinkedin />
-            </div>
-          </div>
-        </div>
-        <br />
-        <div>
-          <h1 className="text-2xl text-[#D434FE] font-bold">Contact Us</h1>
-          <br />
-          <div className="flex gap-4 items-center">
-            <BsFillTelephoneFill />
-            <p>+234 6707653444</p>
-          </div>
-          <br />
-
-          <div className="flex gap-4">
-            <CiLocationOn />
+        <footer className="bg-[#100B20] text-white p-16 flex justify-between">
+          <div>
+            <img src={logo} alt="" />
             <p>
-              27,Alara Street <br />
-              Yaba 100012 <br />
-              Lagos State
+              Getlinked Tech Hackathon is a technology innovation program <br />
+              established by a group of organizations with the aim of showcasing{" "}
+              <br />
+              young and talented individuals in the field of technology
+            </p>
+            <br />
+            <p>
+              Terms of Use{" "}
+              <div className="w-1 h-7 bg-purple-900 inline-block"></div> Privacy
+              Policy
             </p>
           </div>
-        </div>
-      </footer>
+          <div>
+            <h1 className="text-2xl text-[#D434FE] font-bold">Useful Links</h1>
+            <ul>
+              <a href="#">
+                <li>Overview</li>
+              </a>
+              <a href="#">
+                <li>Timeline</li>
+              </a>
+              <a href="#">
+                <li>FAQs</li>
+              </a>
+              <a href="#">
+                <li>Regular</li>
+              </a>
+            </ul>
+            <div className="flex items-center gap-1">
+              <h2 className="text-xl font-bold text-[#D434FE]">Follow us</h2>
+              <div className="flex gap-2 w-20 h-2">
+                <AiOutlineInstagram />
+                <RiTwitterXFill />
+                <FiFacebook />
+                <CiLinkedin />
+              </div>
+            </div>
+          </div>
+          <br />
+          <div>
+            <h1 className="text-2xl text-[#D434FE] font-bold">Contact Us</h1>
+            <br />
+            <div className="flex gap-4 items-center">
+              <BsFillTelephoneFill />
+              <p>+234 6707653444</p>
+            </div>
+            <br />
+
+            <div className="flex gap-4">
+              <CiLocationOn />
+              <p>
+                27,Alara Street <br />
+                Yaba 100012 <br />
+                Lagos State
+              </p>
+            </div>
+          </div>
+        </footer>
+        <p className="text-center p-5">All rights reserved. © getlinked Ltd.</p>
+      </div>
     </>
   );
 }
