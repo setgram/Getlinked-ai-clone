@@ -32,11 +32,11 @@ import { CiLocationOn } from "react-icons/ci";
 export default function Home() {
   return (
     <>
-      <div className="max-w-6xl mx-auto text-white">
-        <div className="flex justify-between">
-          <img src={starImage} alt="star" className="mt-20" />
-          <div className="mt-12">
-            <h3 className="text-3xl italic">
+      <div className="max-w-6xl mx-auto text-white md:mt-10 text-center lg:text-left">
+        <div className="md:flex justify-between flex">
+          <img src={starImage} alt="star" className="md:mt-20 mt-20" />
+          <div className="md:mt-12">
+            <h3 className="italic text-3xl">
               Igniting a Revolution in HR Innovation
             </h3>
             <img
@@ -46,12 +46,12 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="md:flex justify-between flex-wrap">
           <div>
             <img src={creativeImage} alt="Creative" className="mb-0 ml-[70%]" />
             <h1 className="text-6xl font-bold w-full mb-3">getlinked Tech</h1>
             <div className="flex items-center">
-              <h1 className="text-6xl font-bold mb-5">
+              <h1 className="text-6xl font-bold mb-5 w-full">
                 Hackathon <span className="text-[#D434FE]">1.0</span>
               </h1>
               <img src={chainImage} alt="Chain" className="w-10" />
@@ -61,13 +61,13 @@ export default function Home() {
             <p className="mb-6">a chance to win a Big prize</p>
             <Register className="mb-10 mt-5" />
             <img
-              className="mb-5 mt-5"
+              className="mb-5 mt-5 mx-auto lg:mx-0"
               src={countdownImage}
               alt="countdown image"
             />
           </div>
 
-          <div className="relative w-96 h-96">
+          <div className="relative w-96 h-96 mx-auto">
             <img
               src={maleImage}
               alt="Picture of man"
@@ -81,13 +81,17 @@ export default function Home() {
           </div>
         </div>
         <hr />
-        <section className="flex justify-between mt-6 relative space-x-16 items-center">
+        <section className=" block lg:flex justify-between mt-6 relative space-x-16 items-center mb-8 lg:mb-0">
           <img
             className="w-5 h-5 absolute bottom-4 left-2 top-3"
             src={sata}
             alt="star image"
           />
-          <img className="mb-6" src={idea} alt="idea image" />
+          <img
+            className="mb-6 w-80 mx-auto lg:w-full "
+            src={idea}
+            alt="idea image"
+          />
           <div>
             <h2 className="text-2xl font-bold">Introduction to getlinked</h2>
             <h3 className="text-[#D434FE] text-2xl font-bold mt-2 mb-2">
@@ -105,7 +109,7 @@ export default function Home() {
           </div>
         </section>
         <hr />
-        <section className="flex items-center">
+        <section className="block mt-6 lg:mt-0 lg:flex items-center">
           <div>
             <h2 className="text-2xl font-bold">Rules and</h2>
             <h2 className="text-2xl text-[#D434FE] mt-1 mb-1 font-bold">
@@ -124,7 +128,7 @@ export default function Home() {
           <img src={lady} alt="" />
         </section>
         <hr />
-        <section className="flex items-center mt-10 mb-10">
+        <section className="block lg:flex items-center mt-10 mb-10">
           <img src={persons} alt="" />
           <div>
             <h2 className="text-2xl font-bold">Judging Criteria</h2>
@@ -171,7 +175,7 @@ export default function Home() {
           </div>
         </section>
         <hr />
-        <section className=" flex items-center justify-between">
+        <section className="block lg:flex items-center justify-between mt-5 lg:mt-0">
           <div>
             <img src={sata} alt="" className="mb-2" />
             <h2 className="text-2xl font-bold">Frequently Ask</h2>
@@ -223,7 +227,7 @@ export default function Home() {
           <img src={casual} alt="casual" className="" />
         </section>
         <hr />
-        <section>
+        <section className="block">
           <div className="text-center mt-5">
             <h1 className="text-2xl font-bold">Timeline</h1>
             <p>Here is the breakdown of the time we anticipate </p>
@@ -349,7 +353,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="flex justify-end mt-14">
+          <div className="block lg:flex justify-end mt-14">
             <div></div>
             <div>
               <h1 className="text-2xl text-[#D434FE] font-bold">Prizes and</h1>
@@ -376,7 +380,7 @@ export default function Home() {
           </div>
           <img className="mt-10 mb-10" src={partner} alt="" />
         </section>
-        <section className="mt-12">
+        <section className="mt-12 mb-60 lg:mb-0">
           <div>
             <h1 className="font-bold text-2xl">Privacy Policy and</h1>
             <h1 className="font-bold text-2xl text-[#D434FE]">Terms</h1>
@@ -390,7 +394,7 @@ export default function Home() {
               it’s our aim to always take of our participant
             </p>
           </div>
-          <div className="flex justify-between mb-10">
+          <div className="block lg:flex justify-between ml-24 lg:ml-0 mb-10 ">
             <div className="h-[100%] border-2 border-purple-500 w-96 p-10 text-center">
               <p className="text-left">
                 At getlinked tech Hackathon 1.0, we value your privacy and are
@@ -436,9 +440,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <footer className="bg-[#100B20] text-white p-16 flex justify-between">
+        <footer className="bg-[#100B20] text-white p-16 block lg:flex justify-between text-justify space-y-4 lg:space-y-0">
           <div>
-            <img src={logo} alt="" />
+            <img src={logo} alt="" className="mb-5" />
             <p>
               Getlinked Tech Hackathon is a technology innovation program <br />
               established by a group of organizations with the aim of showcasing{" "}
@@ -453,7 +457,9 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <h1 className="text-2xl text-[#D434FE] font-bold">Useful Links</h1>
+            <h1 className="text-2xl text-[#D434FE] font-bold mb-3">
+              Useful Links
+            </h1>
             <ul>
               <a href="#">
                 <li>Overview</li>
