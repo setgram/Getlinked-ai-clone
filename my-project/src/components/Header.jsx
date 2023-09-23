@@ -30,7 +30,6 @@ export default function Header() {
           onClick={() => navigate("/")}
         />
 
-        {/* Hamburger menu icon */}
         <div className="md:hidden">
           <button
             onClick={toggleMobileMenu}
@@ -53,7 +52,6 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile menu */}
         <div
           className={`md:hidden ${
             isMobileMenuOpen ? "block" : "hidden"
@@ -115,11 +113,12 @@ export default function Header() {
             >
               Contact
             </li>
-            <Register />
+            <Link to="/registration">
+              <Register />
+            </Link>
           </ul>
         </div>
 
-        {/* Desktop menu */}
         <div className="hidden md:flex gap-28 items-center">
           <ul className="text-white flex space-x-6 md:flex md:items-center">
             <li
@@ -163,7 +162,9 @@ export default function Header() {
               Contact
             </li>
           </ul>
-          <Register />
+          <Link to="/registration">
+            <Register />
+          </Link>
         </div>
       </header>
     </div>
